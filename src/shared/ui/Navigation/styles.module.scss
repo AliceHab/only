@@ -1,0 +1,97 @@
+.pagination {
+  padding-left: 78px;
+  transform: translateY(-135px);
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+
+  @media (max-width: 1400px) {
+    position: fixed;
+    bottom: 13px;
+    left: 20px;
+    transform: none;
+    padding-left: 0;
+    gap: 10px;
+  }
+}
+
+.counter {
+  font: var(--font-s);
+  color: rgba(var(--black-blue));
+}
+
+.paginationButtonsWrapper {
+  display: flex;
+  gap: 10px;
+
+  @media (max-width: 1400px) {
+    gap: 8px;
+  }
+}
+
+.paginationBtn {
+  height: 50px;
+  width: 50px;
+  border-radius: 9999px;
+  border-color: rgba(var(--black-blue));
+  background-color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: white;
+  }
+
+  @media (max-width: 1400px) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.paginationIcon {
+  width: 6px;
+  height: 12px;
+}
+
+@media (max-width: 1400px) {
+  .paginationIcon.paginationIcon {
+    width: 10px;
+    height: 10px;
+    stroke-width: 2px;
+  }
+}
+
+.disabled {
+  border-color: rgba(var(--black-blue), 0.5);
+}
+
+// circles navigation
+.paginationCirclesWrapper {
+  display: none;
+  gap: 10px;
+
+  @media (max-width: 1400px) {
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.paginationCircle {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(var(--black-blue), 0.4);
+  cursor: pointer;
+  border: none;
+  border-radius: 9999px;
+}
+
+.paginationCircleActive {
+  background-color: rgba(var(--black-blue));
+}
