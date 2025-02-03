@@ -23,12 +23,5 @@ export default (env: BuildEnv) => {
     port: PORT,
   })
 
-  if (!isDev) {
-    config.output = {
-      ...config.output,
-      publicPath: '/only/',
-    }
-  }
-
   return config
 }
