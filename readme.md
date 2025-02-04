@@ -21,7 +21,7 @@
 1. Клонируйте проект
 
 ```bash
-git clone https://github.com/AliceHab/only.git
+git clone git@github.com:AliceHab/only.git
 ```
 
 2. Перейдите в директорию проекта
