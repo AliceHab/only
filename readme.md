@@ -58,6 +58,5 @@ npm start
 
 ## Контакты
 
-- Максим Ефремов
-- maksim.efremof@gmail.com
-- https://t.me/areyoubaka
+email: maksim.efremof@gmail.com
+tg: https://t.me/areyoubaka
